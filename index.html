@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -260,4 +261,825 @@
 
     .product-image {
       position: relative;
-      overflow
+      overflow: hidden;
+      background: var(--creme);
+    }
+
+    .product-image img {
+      width: 100%;
+      height: 310px;
+      object-fit: cover;
+      transition: transform .5s;
+    }
+
+    .product-card:hover .product-image img {
+      transform: scale(1.04);
+    }
+
+    .product-tag {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      background: var(--creme);
+      color: var(--marrom);
+      padding: 7px 10px;
+      font-size: 9px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .product-info {
+      padding: 18px 2px;
+    }
+
+    .product-info h3 {
+      font-size: 21px;
+      color: var(--marrom);
+      margin-bottom: 7px;
+    }
+
+    .product-info p {
+      font-size: 12px;
+      line-height: 1.7;
+      margin-bottom: 0;
+    }
+
+    .product-link {
+      display: inline-block;
+      color: var(--marrom);
+      border-bottom: 1px solid var(--caramelo);
+      padding-bottom: 5px;
+      margin-top: 13px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .story {
+      background: var(--marrom);
+      color: white;
+    }
+
+    .story-image {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+    }
+
+    .story .section-title {
+      color: white;
+    }
+
+    .story p {
+      color: #e7d8cc;
+      font-size: 14px;
+      line-height: 2;
+    }
+
+    .story .section-kicker {
+      color: #d8ab7b;
+    }
+
+    .story-mark {
+      font-family: 'Playfair Display', serif;
+      font-size: 58px;
+      color: #d8ab7b;
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+
+    .gift-section {
+      background: #ead9c5;
+    }
+
+    .gift-box {
+      padding: 45px;
+    }
+
+    .gift-box h2 {
+      font-size: clamp(32px, 4vw, 46px);
+      color: var(--marrom);
+    }
+
+    .gift-box p {
+      line-height: 1.9;
+      font-size: 14px;
+    }
+
+    .gift-image {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+
+    .values {
+      background: var(--creme);
+    }
+
+    .value-card {
+      text-align: center;
+      padding: 25px 20px;
+    }
+
+    .value-card i {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      background: #e8d8c4;
+      color: var(--marrom);
+      border-radius: 50%;
+      font-size: 25px;
+      margin-bottom: 18px;
+    }
+
+    .value-card h3 {
+      color: var(--marrom);
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    .value-card p {
+      font-size: 12px;
+      line-height: 1.8;
+    }
+
+    .newsletter {
+      background:
+        linear-gradient(rgba(42,26,18,.83), rgba(42,26,18,.83)),
+        url('https://images.unsplash.com/photo-1511381939415-e44015466834?auto=format&fit=crop&w=1800&q=80')
+        center/cover no-repeat;
+      color: white;
+      text-align: center;
+    }
+
+    .newsletter h2 {
+      font-size: clamp(30px, 4vw, 43px);
+      margin-bottom: 15px;
+    }
+
+    .newsletter p {
+      color: #f0dfd1;
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    .contact {
+      background: var(--branco);
+    }
+
+    .contact-item {
+      display: flex;
+      gap: 17px;
+      margin-bottom: 25px;
+    }
+
+    .contact-item i {
+      color: var(--caramelo);
+      font-size: 23px;
+    }
+
+    .contact-item h3 {
+      color: var(--marrom);
+      font-size: 20px;
+      margin-bottom: 6px;
+    }
+
+    .contact-item p,
+    .contact-item a {
+      color: var(--texto);
+      font-size: 13px;
+      line-height: 1.8;
+      overflow-wrap: anywhere;
+    }
+
+    .contact-item a:hover {
+      color: var(--caramelo);
+    }
+
+    footer {
+      background: var(--marrom-escuro);
+      color: #e7d8cc;
+      padding: 55px 0 22px;
+    }
+
+    footer h3 {
+      color: white;
+      font-size: 23px;
+    }
+
+    footer p,
+    footer a {
+      font-size: 12px;
+      line-height: 1.9;
+      color: #d7c5b5;
+    }
+
+    footer a:hover {
+      color: white;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,.13);
+      margin-top: 30px;
+      padding-top: 20px;
+      font-size: 11px;
+    }
+
+    .social-links a {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 37px;
+      height: 37px;
+      border: 1px solid #796257;
+      border-radius: 50%;
+      margin-right: 7px;
+      font-size: 16px;
+    }
+
+    @media (max-width: 767px) {
+      .hero {
+        min-height: 540px;
+        background-position: 60% center;
+      }
+
+      .section {
+        padding: 60px 0;
+      }
+
+      .category-card {
+        height: 310px;
+      }
+
+      .product-image img {
+        height: 260px;
+      }
+
+      .story-image {
+        height: 330px;
+      }
+
+      .gift-box {
+        padding: 30px 20px;
+      }
+
+      .gift-image {
+        height: 300px;
+      }
+
+      .nav-icons {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Aviso superior -->
+  <div class="announcement">
+    CHOCOLATE, CARINHO E MOMENTOS ESPECIAIS
+  </div>
+
+  <!-- Cabeçalho -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+
+      <a class="brand" href="#inicio">
+        ESSÊNCIA
+        <small>Chocolateria</small>
+      </a>
+
+      <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse" data-bs-target="#menu"
+        aria-controls="menu" aria-expanded="false"
+        aria-label="Abrir navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav mx-auto mt-3 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#inicio">INÍCIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#categorias">CATEGORIAS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#produtos">CHOCOLATES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#historia">NOSSA HISTÓRIA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contato">CONTATO</a>
+          </li>
+        </ul>
+
+        <div class="nav-icons">
+          <a href="#produtos" aria-label="Ver produtos">
+            <i class="bi bi-search"></i>
+          </a>
+          <a href="#contato" aria-label="Contato">
+            <i class="bi bi-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner principal -->
+  <header class="hero" id="inicio">
+    <div class="container">
+      <div class="hero-content">
+        <div class="eyebrow">Uma experiência especial</div>
+
+        <h1>Pequenos prazeres, grandes momentos.</h1>
+
+        <p>
+          Descubra um universo de chocolates, sabores e presentes
+          para transformar momentos simples em lembranças especiais.
+        </p>
+
+        <div class="d-flex flex-wrap gap-3">
+          <a href="#produtos" class="btn btn-chocolate"
+            style="background:#e2bd94;color:#38251e;border-color:#e2bd94">
+            EXPLORAR CHOCOLATES
+          </a>
+
+          <a href="#categorias" class="btn-light-outline">
+            CONHECER COLEÇÕES
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Categorias -->
+  <section class="section categories" id="categorias">
+    <div class="container">
+
+      <div class="text-center mb-5">
+        <div class="section-kicker">Nosso universo</div>
+        <h2 class="section-title">Descubra seus favoritos</h2>
+        <p class="section-description mx-auto">
+          Sabores e experiências para diferentes ocasiões,
+          desde um pequeno agrado até um presente especial.
+        </p>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <a href="#produtos" class="category-card">
+            <img
+              src="https://images.unsplash.com/photo-1511381939415-e44015466834?auto=format&fit=crop&w=900&q=85"
+              alt="Seleção de chocolates"
+              loading="lazy">
+
+            <div class="category-caption">
+              <h3>Chocolates</h3>
+              <span>Conheça a seleção <i class="bi bi-arrow-right"></i></span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4">
+          <a href="#presentes" class="category-card">
+            <img
+              src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=900&q=85"
+              alt="Embalagem de presente"
+              loading="lazy">
+
+            <div class="category-caption">
+              <h3>Presentes</h3>
+              <span>Surpreenda alguém <i class="bi bi-arrow-right"></i></span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4">
+          <a href="#produtos" class="category-card">
+            <img
+              src="https://images.unsplash.com/photo-1481391319762-47dff72954d9?auto=format&fit=crop&w=900&q=85"
+              alt="Bombons de chocolate"
+              loading="lazy">
+
+            <div class="category-caption">
+              <h3>Bombons</h3>
+              <span>Um toque especial <i class="bi bi-arrow-right"></i></span>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Produtos em destaque -->
+  <section class="section products" id="produtos">
+    <div class="container">
+
+      <div class="d-flex flex-wrap justify-content-between align-items-end mb-5 gap-3">
+        <div>
+          <div class="section-kicker">Seleção especial</div>
+          <h2 class="section-title mb-0">Um mundo de sabores</h2>
+        </div>
+
+        <p class="section-description mb-0">
+          Imagens ilustrativas de produtos e chocolates.
+        </p>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-6 col-lg-3">
+          <article class="product-card">
+            <div class="product-image">
+              <span class="product-tag">Clássicos</span>
+              <img
+                src="https://images.unsplash.com/photo-1548907040-4d42f9f4b2f8?auto=format&fit=crop&w=700&q=85"
+                alt="Chocolate em barra"
+                loading="lazy">
+            </div>
+
+            <div class="product-info">
+              <h3>Barras de chocolate</h3>
+              <p>Uma inspiração para quem aprecia o sabor do chocolate.</p>
+              <a href="#contato" class="product-link">Consultar produtos</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <article class="product-card">
+            <div class="product-image">
+              <span class="product-tag">Especial</span>
+              <img
+                src="https://images.unsplash.com/photo-1481391319762-47dff72954d9?auto=format&fit=crop&w=700&q=85"
+                alt="Bombons variados"
+                loading="lazy">
+            </div>
+
+            <div class="product-info">
+              <h3>Bombons especiais</h3>
+              <p>Uma apresentação delicada para momentos de degustação.</p>
+              <a href="#contato" class="product-link">Consultar produtos</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <article class="product-card">
+            <div class="product-image">
+              <span class="product-tag">Para presentear</span>
+              <img
+                src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=700&q=85"
+                alt="Caixa para presente"
+                loading="lazy">
+            </div>
+
+            <div class="product-info">
+              <h3>Caixas para presente</h3>
+              <p>Ideias visuais para celebrar datas e ocasiões especiais.</p>
+              <a href="#contato" class="product-link">Consultar produtos</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <article class="product-card">
+            <div class="product-image">
+              <span class="product-tag">Inspiração</span>
+              <img
+                src="https://images.unsplash.com/photo-1511381939415-e44015466834?auto=format&fit=crop&w=700&q=85"
+                alt="Composição com chocolates"
+                loading="lazy">
+            </div>
+
+            <div class="product-info">
+              <h3>Seleção de chocolates</h3>
+              <p>Inspirações para conhecer diferentes apresentações.</p>
+              <a href="#contato" class="product-link">Consultar produtos</a>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Nossa história -->
+  <section class="section story" id="historia">
+    <div class="container">
+      <div class="row align-items-center g-5">
+
+        <div class="col-lg-6">
+          <img
+            class="story-image"
+            src="https://images.unsplash.com/photo-1511381939415-e44015466834?auto=format&fit=crop&w=1100&q=85"
+            alt="Chocolates em uma composição gastronômica"
+            loading="lazy">
+        </div>
+
+        <div class="col-lg-6">
+          <div class="story-mark">Essência.</div>
+          <div class="section-kicker">Nossa proposta</div>
+
+          <h2 class="section-title">
+            O sabor de tornar cada momento especial.
+          </h2>
+
+          <p>
+            O chocolate faz parte de pequenos rituais, encontros,
+            celebrações e demonstrações de carinho. Nossa proposta
+            visual valoriza essa conexão entre sabor, afeto e presente.
+          </p>
+
+          <p>
+            A Chocolateria Essência é um nome demonstrativo para este
+            modelo de site. Este espaço pode receber a história real
+            da sua empresa, seus valores, sua origem e os diferenciais
+            que deseja apresentar aos clientes.
+          </p>
+
+          <a href="#contato" class="btn btn-light-outline mt-3">
+            FALE CONOSCO
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Presentes -->
+  <section class="section gift-section" id="presentes">
+    <div class="container">
+      <div class="row align-items-center g-0">
+
+        <div class="col-lg-6">
+          <div class="gift-box">
+            <div class="section-kicker">Momentos para celebrar</div>
+
+            <h2>Presentear também é uma forma de demonstrar carinho.</h2>
+
+            <p class="mt-4">
+              Aniversários, encontros, datas comemorativas ou uma surpresa
+              sem motivo especial: presentes com chocolate são uma forma
+              de tornar os momentos ainda mais memoráveis.
+            </p>
+
+            <p>
+              Consulte as opções disponíveis diretamente com a empresa.
+            </p>
+
+            <a href="#contato" class="btn btn-chocolate mt-2">
+              SOLICITAR INFORMAÇÕES
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <img
+            class="gift-image"
+            src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=1100&q=85"
+            alt="Presente cuidadosamente embalado"
+            loading="lazy">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Valores visuais -->
+  <section class="section values">
+    <div class="container">
+
+      <div class="text-center mb-4">
+        <div class="section-kicker">O que nos inspira</div>
+        <h2 class="section-title">Muito além do chocolate</h2>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="value-card">
+            <i class="bi bi-heart"></i>
+            <h3>Afeto</h3>
+            <p>
+              Celebrar os pequenos gestos que aproximam as pessoas
+              e tornam os dias especiais.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="value-card">
+            <i class="bi bi-stars"></i>
+            <h3>Experiência</h3>
+            <p>
+              Valorizar os detalhes, as apresentações e a experiência
+              de descobrir novos sabores.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="value-card">
+            <i class="bi bi-gift"></i>
+            <h3>Presentes</h3>
+            <p>
+              Inspirar demonstrações de carinho em diferentes
+              ocasiões e celebrações.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Chamada final -->
+  <section class="section newsletter">
+    <div class="container">
+      <div class="section-kicker">Um momento para você</div>
+
+      <h2>Descubra o prazer dos pequenos detalhes.</h2>
+
+      <p class="mx-auto" style="max-width:600px">
+        Entre em contato para conhecer as informações comerciais,
+        as categorias e as opções que sua empresa oferece.
+      </p>
+
+      <a href="#contato" class="btn btn-chocolate mt-3"
+        style="background:#e2bd94;color:#38251e;border-color:#e2bd94">
+        ENTRE EM CONTATO
+      </a>
+    </div>
+  </section>
+
+  <!-- Contato demonstrativo -->
+  <section class="section contact" id="contato">
+    <div class="container">
+      <div class="row g-5">
+
+        <div class="col-lg-6">
+          <div class="section-kicker">Estamos à disposição</div>
+
+          <h2 class="section-title">Vamos conversar?</h2>
+
+          <p class="section-description mb-5">
+            Este espaço pode apresentar os canais oficiais de atendimento,
+            endereço, horário de funcionamento e redes sociais da sua empresa.
+          </p>
+
+          <div class="contact-item">
+            <i class="bi bi-envelope"></i>
+            <div>
+              <h3>E-mail</h3>
+              <p>Adicione aqui o e-mail oficial da empresa.</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <i class="bi bi-telephone"></i>
+            <div>
+              <h3>Telefone</h3>
+              <p>Adicione aqui o telefone comercial.</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <i class="bi bi-geo-alt"></i>
+            <div>
+              <h3>Endereço</h3>
+              <p>Adicione aqui o endereço comercial, se aplicável.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="p-4 p-md-5" style="background:#f7f1e8">
+            <h3 style="color:#38251e;font-size:29px">
+              Informações da empresa
+            </h3>
+
+            <p class="mt-3" style="font-size:13px;line-height:1.9">
+              Este modelo está pronto para personalização. Substitua o
+              nome demonstrativo, os textos institucionais e os contatos
+              pelos dados verdadeiros da empresa antes de publicar.
+            </p>
+
+            <hr style="border-color:#d9c8b7">
+
+            <p style="font-size:12px;line-height:1.9">
+              <i class="bi bi-check-circle me-2"></i>
+              Layout adaptável para celulares e computadores.
+              <br>
+
+              <i class="bi bi-check-circle me-2"></i>
+              Estrutura de página única.
+              <br>
+
+              <i class="bi bi-check-circle me-2"></i>
+              Navegação por seções.
+              <br>
+
+              <i class="bi bi-check-circle me-2"></i>
+              Fotografias externas ilustrativas.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="container">
+
+      <div class="row g-4">
+
+        <div class="col-lg-5">
+          <h3>ESSÊNCIA</h3>
+          <p class="text-uppercase" style="letter-spacing:3px;font-size:9px">
+            Chocolateria
+          </p>
+
+          <p>
+            Um modelo de apresentação comercial inspirado no universo
+            dos chocolates, presentes e experiências gastronômicas.
+          </p>
+
+          <div class="social-links">
+            <!-- Adicione os links oficiais das redes sociais -->
+            <a href="#contato" aria-label="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+
+            <a href="#contato" aria-label="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+
+            <a href="#contato" aria-label="E-mail">
+              <i class="bi bi-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <h3>Explorar</h3>
+          <p><a href="#inicio">Início</a></p>
+          <p><a href="#categorias">Categorias</a></p>
+          <p><a href="#produtos">Chocolates</a></p>
+          <p><a href="#historia">Nossa proposta</a></p>
+        </div>
+
+        <div class="col-6 col-lg-4">
+          <h3>Atendimento</h3>
+          <p><a href="#contato">Informações de contato</a></p>
+          <p><a href="#contato">Endereço comercial</a></p>
+          <p><a href="#contato">Canais oficiais</a></p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom d-flex flex-wrap justify-content-between gap-2">
+        <span>
+          &copy; <span id="ano"></span> Chocolateria Essência.
+          Modelo demonstrativo.
+        </span>
+
+        <a href="#inicio">Voltar ao início ↑</a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Atualiza o ano automaticamente.
+    document.getElementById("ano").textContent =
+      new Date().getFullYear();
+
+    // Fecha o menu mobile após clicar em um link.
+    document.querySelectorAll(".navbar-nav .nav-link").forEach(function(link) {
+      link.addEventListener("click", function() {
+        const menu = document.getElementById("menu");
+
+        if (menu.classList.contains("show")) {
+          bootstrap.Collapse.getOrCreateInstance(menu).hide();
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
+```
